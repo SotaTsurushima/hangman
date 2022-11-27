@@ -1,0 +1,2 @@
+def hangman(word):
+ pass
