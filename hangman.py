@@ -1,3 +1,5 @@
+import random
+
 def hangman(word):
   wrong = 0
   stages = ["",
@@ -40,5 +42,7 @@ def hangman(word):
     print("\n".join(stages[0:wrong+1]))
     print("あなたの負け!正解は{}".format(word))
 
+
 # 正解の文字を引数にセットする
-hangman("cat")
+random_words = ["cat", "dog", "beautiful"]
+hangman(random.choice(random_words))
